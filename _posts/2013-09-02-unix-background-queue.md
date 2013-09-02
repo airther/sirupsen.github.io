@@ -51,57 +51,7 @@ thread scheduler can do a `select(2)` on the file descriptioners and decide
 which thread to run, ignoring those that are currently waiting for I/O. Below is
 the source for a function to handle this in a C extension.
 
-{% highlight c %}
-VALUE 
-posix_mqueue_receive(VALUE self)
-{
-  // Contains any error returned by the syscall
-  int err;
-
-  // Buffer data from the message queue is read into
-  size_t buf_size;
-  char *buf;
-
-  // The Ruby string (a VALUE is a Ruby object) that we return to Ruby with the
-  // contents of the buffer.
-  VALUE str;
-
-  // posix-mqueue's internal data structure, contains information about the
-  // queue such as the file descriptor, queue size, etc.
-  mqueue_t* data;
-
-  // Get the internal data structure
-  TypedData_Get_Struct(self, mqueue_t, &mqueue_type, data);
-
-  // The buffer size is one byte larger than the maximum message size
-  buf_size = data->attr.mq_msgsize + 1;
-  buf = (char*)malloc(buf_size);
-
-  // We notify the Ruby scheduler this thread is now waiting for I/O
-  // The Ruby scheduler can resume this thread when the file descriptioner in
-  // data->fd becomes readable. This file descriptioner points to the message
-  // queue.
-  rb_thread_wait_fd(data->fd);
-
-  // syscall to mq_receive(3) with the message queue file desriptor and our
-  // buffer. This call will block, once it returns the buffer will be filled
-  // with the frontmost message.
-  do {
-    err = mq_receive(data->fd, buf, buf_size, NULL);
-  } while(err < 0 && errno == EINTR); // Retry interrupted syscall
-
-  if (err < 0) { rb_sys_fail("Message retrieval failed"); }
-
-  // Create a Ruby string from the now filled buffer that contains the message
-  str = rb_str_new(buf, err);
-
-  // Free the buffer
-  free(buf);
-
-  // Finally return the Ruby string
-  return str;
-}
-{% endhighlight %}
+{% gist 6416163 %}
 
 It was a fun experience creating a Ruby C extension. A lot of greeping in MRI to
 find the right methods. Despite being undocumented, the api is pretty nice to
