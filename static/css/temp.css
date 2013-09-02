@@ -995,6 +995,10 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
+.gist {
+  font-size: 12px;
+}
+
 pre {
   text-decoration: none !important;
   font-size: 80%;
