@@ -18,7 +18,8 @@ the classics include:
 1. Files. Persistent, would require handling file locking to work for this case.
 2. Signals. Only for commands, no information passing.
 3. Sockets. Good choice, but would require self-handling of persistence.
-4. Named pipes. Same story as sockets.
+4. Named pipes. Could have worked well, but are not message oriented. See [this
+   gist][clausgist].
 5. Shared memory. Not persistent. Requires using semaphores or something similar
    to avoid race conditions.
 
@@ -138,3 +139,4 @@ use them!
 [posix-mqueue]: https://github.com/Sirupsen/posix-mqueue
 [pmq7]: http://man7.org/linux/man-pages/man7/mq_overview.7.html
 [select2]: http://man7.org/linux/man-pages/man2/select.2.html
+[clausgist]: https://gist.github.com/clausd/6416463
