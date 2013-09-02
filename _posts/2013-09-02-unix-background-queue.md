@@ -55,7 +55,8 @@ the source for a function to handle this in a C extension.
 VALUE 
 posix_mqueue_receive(VALUE self)
 {
-  int err; // Contains any error returned by the syscall
+  // Contains any error returned by the syscall
+  int err;
 
   // Buffer data from the message queue is read into
   size_t buf_size;
