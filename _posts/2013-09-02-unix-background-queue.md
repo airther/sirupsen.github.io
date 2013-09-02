@@ -115,13 +115,14 @@ block, and therefore still has a job for the worker:
 def multiple_queue_shift
   (queue,), = IO.select(@queues)
 
-  # This calls mq_timedreceive(3) via posix-mqueue (wrapped in Localjob to
-  # deserialize as well). It'll raise an exception if it would block, which
+  # This calls mq_timedreceive(3) via posix-mqueue 
+  # (wrapped in Localjob to # deserialize as well).
+  # It'll raise an exception if it would block, which
   # means the queue is empty.
   queue.shift
 
-  # The job was taken by another worker, and no jobs have been pushed in the
-  # meanwhile. Start over.
+  # The job was taken by another worker, and no jobs
+  # have been pushed in the meanwhile. Start over.
 rescue POSIX::Mqueue::QueueEmpty
   retry
 end
