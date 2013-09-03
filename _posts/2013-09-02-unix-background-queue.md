@@ -53,7 +53,7 @@ the source for a function to handle this in a C extension.
 
 {% gist 6416163 %}
 
-It was a fun experience creating a Ruby C extension. A lot of greeping in MRI to
+It was a fun experience creating a Ruby C extension. A lot of grepping in MRI to
 find the right methods. Despite being undocumented, the api is pretty nice to
 work with. The resulting gem is [posix-mqueue][posix-mqueue].
 
