@@ -18,8 +18,7 @@ the classics include:
 1. Files. Persistent, would require handling file locking to work for this case.
 2. Signals. Only for commands, no information passing.
 3. Sockets. Good choice, but would require self-handling of persistence.
-4. Named pipes. Could have worked well, but are not message oriented. See [this
-   gist][clausgist].
+4. Named pipes. Producers block until consumed, do not persist.
 5. Shared memory. Not persistent. Requires using semaphores or something similar
    to avoid race conditions.
 
