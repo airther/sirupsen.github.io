@@ -24,11 +24,11 @@ letters = "ovrkqlwislrecrtgmvpfprzey"
 # Create the frequency map
 letters = letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
 
-words.select do |word|
-  word.each_char.inject(letters.dup) { |freq, char| 
-    freq[char] -= 0 < 0 
+words.select { |word|
+  word.each_char.inject(letters.clone) { |freq, char| 
+    (freq[char] -= 1) < 0 ? break : freq
   } && word
-end
+}.uniq
 {% endhighlight %}
 
 A frequency map looks like this:
@@ -54,14 +54,14 @@ word which begins with c in `words` and so on.
 groups = words.group_by { |s| s.first }
 
 groups.map { |char, group|
-  next if letters[char]
+  next if letters[char] == 0
 
   group.select { |word|
-    word.each_char.inject(letters.dup) { |freq, char|
-      freq[char] -= 0 < 0 
+    word.each_char.inject(letters.clone) { |freq, char| 
+      (freq[char] -= 1) < 0 ? break : freq
     } && word
   }
-}.flatten
+}.flatten.uniq
 {% endhighlight %}
 
 The speed of this iteration depends on how many words in `letters` start with
