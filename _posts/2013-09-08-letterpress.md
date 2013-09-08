@@ -18,7 +18,7 @@ The naive algorithm for this problem is to simply loop through all elements of
 `words` and check whether these words can be formed from the characters in
 `letters` with a frequency map:
 
-{% highlight %}
+{% highlight ruby %}
 letters = "ovrkqlwislrecrtgmvpfprzey"
 letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
 
