@@ -3,18 +3,20 @@ layout: post
 title: Letterpress Cheater Algorithm
 ---
 
-A few months ago when Letterpress was hot, I thought about an efficient algorithm
-for a cheater application. A trivial algorithm is quite slow in Ruby for this
-problem. Abbreviated, the problem is the following:
+A few months ago when Letterpress was hot, I thought about an efficient
+algorithm for a cheater application. A trivial solution in Ruby is quite slow
+for this problem, which motivated me to check out alternative approaches.
+Abbreviated, the problem is the following:
 
 > Given 25 random letters (`letters`), find every string in an array of strings (`words`) that
 > consists of only those letters. 
 
-I'll start by walking through a naive solution before presenting my algorithm.
+I'll start by walking through a naive solution before presenting a data
+structure to solve this problem efficiently.
 
 ## Naive algorithm
 
-The naive algorithm for this problem is to simply loop through all elements of
+The naive approach for this problem is to simply loop through all elements of
 `words` and check whether these words can be formed from the characters in
 `letters` with a frequency map:
 
