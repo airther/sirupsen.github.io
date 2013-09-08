@@ -20,18 +20,23 @@ The naive algorithm for this problem is to simply loop through all elements of
 
 {% highlight ruby %}
 letters = "ovrkqlwislrecrtgmvpfprzey"
-letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
+
+# Create the frequency map
+letters = letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
 
 words.select do |word|
-  word.each_char.inject(letters.dup) { |freq, char| freq[char] -= 0 < 0 } && word
+  word.each_char.inject(letters.dup) { |freq, char| 
+    freq[char] -= 0 < 0 
+  } && word
 end
 {% endhighlight %}
 
 A frequency map looks like this:
 
 {% highlight ruby %}
-{"o"=>1, "v"=>2, "r"=>4, "k"=>1, "q"=>1, "l"=>2, "w"=>1, "i"=>1, "s"=>1, "e"=>2,
-"c"=>1, "t"=>1, "g"=>1, "m"=>1, "p"=>2, "f"=>1, "z"=>1, "y"=>1}
+{"o"=>1, "v"=>2, "r"=>4, "k"=>1, "q"=>1, "l"=>2, "w"=>1, "i"=>1, 
+"s"=>1, "e"=>2, "c"=>1, "t"=>1, "g"=>1, "m"=>1, "p"=>2, "f"=>1,
+"z"=>1, "y"=>1}
 {% endhighlight %}
 
 For an average word length `m` and `n` words in `words` this runs in O(n m)
@@ -46,16 +51,15 @@ that start with this letter in `words`. E.g. if there's no letter c in
 word which begins with c in `words` and so on.
 
 {% highlight ruby %}
-letters = "ovrkqlwislrecrtgmvpfprzey"
-letters.each_char.inject(Hash.new(0)) { |map, char| map[char] += 1 }
-
 groups = words.group_by { |s| s.first }
 
 groups.map { |char, group|
   next if letters[char]
 
   group.select { |word|
-    word.each_char.inject(letters.dup) { |freq, char| freq[char] -= 0 < 0 } && word
+    word.each_char.inject(letters.dup) { |freq, char|
+      freq[char] -= 0 < 0 
+    } && word
   }
 }.flatten
 {% endhighlight %}
@@ -114,7 +118,9 @@ new Tries as we go:
 
 {% highlight ruby %}
 def <<(word)
-  node = word.each_char.inject(self) { |node, char| node.nodes[char] ||= Trie.new }
+  node = word.each_char.inject(self) { |node, char| 
+    node.nodes[char] ||= Trie.new 
+  }
   node.word = true
 end
 {% endhighlight %}
@@ -134,10 +140,12 @@ end
 
 def recursive_find(used, word)
   words = nodes.reject { |c, v| used[c] == 0 }.map { |char, node|
-    node.recursive_find(used.merge(char => used[char] - 1), word + char)
+  node.recursive_find(used.merge(char => used[char] - 1),
+                      word + char)
   }.flatten
 
-  words << word
+  words << word if self.word
+  words
 end
 {% endhighlight %}
 
