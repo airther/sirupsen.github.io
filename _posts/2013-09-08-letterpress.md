@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Letterpress Cheater in Ruby
+title: Letterpress Cheater Algorithm
 ---
 
-Few months ago when Letterpress was hot, I thought about an efficient algorithm
+A few months ago when Letterpress was hot, I thought about an efficient algorithm
 for a cheater application. A trivial algorithm is quite slow in Ruby for this
 problem. Abbreviated, the problem is the following:
 
@@ -177,10 +177,11 @@ end
 
 ## Benchmarks
 
-I made a few small optimizations to the Trie showed here to make it faster.
+I made a [few small optimizations to the
+trie](https://gist.github.com/Sirupsen/6481936) showed here to make it faster.
 There's still plenty of things that could be done to make it faster, such as
 concurrent searching, and there's probably a bunch of things that can be found
-profiling. Either way, it's clear that it is much faster to use a Trie over the
+profiling. Either way, it's clear that it is much faster to use a trie over the
 naive methods presented earlier. The trie uses a lot of memory, this could be
 optimized by converting it into a [radix
 tree](http://en.wikipedia.org/wiki/Radix_tree), which could also yield small
@@ -211,3 +212,7 @@ performance benefits.
     naive  2.810000   0.010000   2.820000 (  2.822617)
     group  2.140000   0.000000   2.140000 (  2.147578)
 
+
+About 0.1-0.2s in the worst case on actual Letterpress games is absolutely fine.
+The second case, which takes the most time, is a stress test with every letter of
+the alphabet. It would never happen in Letterpress.
