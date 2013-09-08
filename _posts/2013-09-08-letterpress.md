@@ -18,21 +18,21 @@ The naive algorithm for this problem is to simply loop through all elements of
 `words` and check whether these words can be formed from the characters in
 `letters` with a frequency map:
 
-```ruby
+{% highlight %}
 letters = "ovrkqlwislrecrtgmvpfprzey"
 letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
 
 words.select do |word|
   word.each_char.inject(letters.dup) { |freq, char| freq[char] -= 0 < 0 } && word
 end
-```
+{% endhighlight %}
 
 A frequency map looks like this:
 
-```ruby
+{% highlight ruby %}
 {"o"=>1, "v"=>2, "r"=>4, "k"=>1, "q"=>1, "l"=>2, "w"=>1, "i"=>1, "s"=>1, "e"=>2,
 "c"=>1, "t"=>1, "g"=>1, "m"=>1, "p"=>2, "f"=>1, "z"=>1, "y"=>1}
-```
+{% endhighlight %}
 
 For an average word length `m` and `n` words in `words` this runs in O(n m)
 time.  In my tests, this algorithm runs in about 2-4s on my Macbook on the
@@ -45,7 +45,7 @@ that start with this letter in `words`. E.g. if there's no letter c in
 `letters`, we can skip to the words beginning with d when we encounter the first
 word which begins with c in `words` and so on.
 
-```ruby
+{% highlight ruby %}
 letters = "ovrkqlwislrecrtgmvpfprzey"
 letters.each_char.inject(Hash.new(0)) { |map, char| map[char] += 1 }
 
@@ -58,7 +58,7 @@ groups.map { |char, group|
     word.each_char.inject(letters.dup) { |freq, char| freq[char] -= 0 < 0 } && word
   }
 }.flatten
-```
+{% endhighlight %}
 
 The speed of this iteration depends on how many words in `letters` start with
 each character in `words`. Say that `k` is the highest number of words that
@@ -76,7 +76,7 @@ creates a neat, recursive structure called a Trie.
 For instance, if we put in the word "band", "ban" and "boo" in the data
 structure, it will look like this:
 
-```ruby
+{% highlight ruby %}
 {
   b: {
     o: {
@@ -91,14 +91,14 @@ structure, it will look like this:
     }
   }
 }
-```
+{% endhighlight %}
 
 That way we can check that "boo" is in the structure with something like:
 `map[:b][:o][:o]`. However, that would also imply that "bo" is in the structure,
 which it is not. We need a state on each of the maps that tells whether a word
 ends at this letter. 
 
-```ruby
+{% highlight ruby %}
 class Trie
   attr_accessor :word, :nodes
 
@@ -106,18 +106,18 @@ class Trie
     @word, @nodes = false, {}
   end
 end
-```
+{% endhighlight %}
 
 With that in place, we can create a method to create the data structure
 described above, by going through each character in the added string, creating
 new Tries as we go:
 
-```ruby
+{% highlight ruby %}
 def <<(word)
   node = word.each_char.inject(self) { |node, char| node.nodes[char] ||= Trie.new }
   node.word = true
 end
-```
+{% endhighlight %}
 
 With that comes the interesting part. The problem is now, given this data
 structure, how do we find all the entries in the data structure, which is the
@@ -127,7 +127,7 @@ Once again we make use of the frequency map explained in the previous section,
 and then we recursively visit nodes in the data structure. The frequency map is
 updated as we go down the recursion, so invalid paths can be detected.
 
-```ruby
+{% highlight ruby %}
 def find(letters)
   recursive_find frequency_map(letters), ""
 end
@@ -139,11 +139,11 @@ def recursive_find(used, word)
 
   words << word
 end
-```
+{% endhighlight %}
 
 Here's the full implementation of the algorithm:
 
-```ruby
+{% highlight ruby %}
 class Trie
   attr_accessor :word, :nodes
 
@@ -173,7 +173,7 @@ class Trie
     letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
   end
 end
-```
+{% endhighlight %}
 
 ## Benchmarks
 
