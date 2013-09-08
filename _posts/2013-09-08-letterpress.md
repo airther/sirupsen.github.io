@@ -149,7 +149,7 @@ def recursive_find(used, word)
 end
 {% endhighlight %}
 
-The full implementation of the algorithm can be seen in [this
+The full implementation of the data structure can be seen in [this
 Gist](https://gist.github.com/Sirupsen/6481936#file-gistfile1-rb-L3-L31).
 
 ## Benchmarks
@@ -190,6 +190,6 @@ performance benefits.
     group  2.140000   0.000000   2.140000 (  2.147578)
 
 
-About 0.1-0.2s in the worst case on actual Letterpress games is absolutely fine.
-The second case, which takes the most time, is a stress test with every letter of
-the alphabet. It would never happen in Letterpress.
+About 0.1-0.2s in the worst case on actual Letterpress games is absolutely fine
+for use in a service. The second case, which takes the most time, is a stress
+test with every letter of the alphabet. It would never happen in Letterpress.
