@@ -141,39 +141,8 @@ def recursive_find(used, word)
 end
 {% endhighlight %}
 
-Here's the full implementation of the algorithm:
-
-{% highlight ruby %}
-class Trie
-  attr_accessor :word, :nodes
-
-  def initialize
-    @word, @nodes = false, {}
-  end
-
-  def <<(word)
-    node = word.each_char.inject(self) { |node, char| node.nodes[char] ||= Trie.new }
-    node.word = true
-  end
-
-  def find(letters)
-    recursive_find frequency_map(letters), ""
-  end
-
-  def recursive_find(used, word)
-    words = nodes.reject { |c, v| used[c] == 0 }.map { |char, node|
-      node.recursive_find(used.merge(char => used[char] - 1), word + char)
-    }.flatten
-
-    words << word
-  end
-
-  private
-  def frequency_map(letters)
-    letters.each_char.inject(Hash.new(0)) { |map, char| (map[char] += 1) && map }
-  end
-end
-{% endhighlight %}
+The full implementation of the algorithm can be seen in [this
+Gist](https://gist.github.com/Sirupsen/6481936#file-gistfile1-rb-L3-L31).
 
 ## Benchmarks
 
