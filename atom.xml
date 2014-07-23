@@ -24,7 +24,12 @@ layout: nil
    {% endif %}
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http:/sirupsen.com{{ post.id }}</id>
+
+   {% if post.external_url %}
+   <content type="html">This post was written by Sirupsen on another blog. <a href="{{ post.external_url }}">Read this post on another site.</a></content>
+   {% else %}
    <content type="html">{{ post.content | xml_escape }}</content>
+   {% endif %}
  </entry>
  {% endfor %}
 </feed>
