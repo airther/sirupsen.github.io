@@ -285,10 +285,6 @@ important areas to ramp down the barrier of entry. I’m excited for the
 future—but we’ve still got a lot of work left to make production more
 accessible.
 
-[My talk at DockerCon Europe 2014 on Docker in Production at Shopify][dockercon-eu-talk]
-
-[My talk at DockerCon 2015 on Resilient Routing and Discovery](https://www.youtube.com/watch?v=ZDeAEZHby_A)
-
 [dockercon-eu-talk]: https://www.youtube.com/watch?v=Qr0sATj9IVc
 [goto-chg-talk]: https://www.youtube.com/watch?v=ZDeAEZHby_A
 [scale-slide]: https://speakerdeck.com/sirupsen/dockercon-2015-resilient-routing-and-discovery#3
