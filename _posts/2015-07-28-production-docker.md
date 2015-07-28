@@ -304,7 +304,7 @@ My [talk at DockerCon EU 2014][dockercon-eu-talk] on Docker in production at Sho
 [distribution-roadmap-gc]: https://github.com/docker/distribution/blob/master/ROADMAP.md#deletes
 [exp-releases]: https://github.com/docker/docker/tree/5fdc10239624aa3b623f46af28bf237b0f33299f/experimental
 [dockercon-eu-keynote]: https://www.youtube.com/watch?v=QmRBB7u-4TE
-[dockercon-eu-plumbing]: https://www.youtube.com/watch?v=at72dhg-SZY
+[dockercon-na-plumbing]: https://www.youtube.com/watch?v=at72dhg-SZY
 [walrus-docker]: http://image.slidesharecdn.com/keynoted1-150625182929-lva1-app6891/95/dockercon-sf-2015-keynote-day-1-59-638.jpg?cb=1436479368
 [fluentd]: http://www.fluentd.org/
 [docker-16]: https://blog.docker.com/2015/04/docker-release-1-6/
