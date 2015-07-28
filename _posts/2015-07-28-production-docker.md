@@ -106,12 +106,12 @@ for the past two years.
 
 One example of an area that could’ve profited from change earlier is logging.
 Hardly a glamorous problem but nonetheless a universal one. There’s currently no
-great, generic solution. In the wild the they’re all over the map: tail log
-files, log inside the container, log to the host through a mount, log to the
-host’s syslog, expose them via something like [fluentd][fluentd], log directly
-to the network from their applications or log to a file and have another process
-send the logs to Kafka. [In 1.6, support for logging drivers][docker-16] was
-merged into core; however, drivers have to be accepted in core ([which is hardly
+great, generic solution. In the wild they’re all over the map: tail log files,
+log inside the container, log to the host through a mount, log to the host’s
+syslog, expose them via something like [fluentd][fluentd], log directly to the
+network from their applications or log to a file and have another process send
+the logs to Kafka. [In 1.6, support for logging drivers][docker-16] was merged
+into core; however, drivers have to be accepted in core ([which is hardly
 easy][fluentd-pr]). In 1.7, [experimental support for out-of-process
 plugins][plugins-17] was merged, but – to my disappointment – it didn’t ship
 with a logging driver. I believe this is planned for 1.8, but couldn’t find that
