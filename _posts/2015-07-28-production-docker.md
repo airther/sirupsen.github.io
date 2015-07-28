@@ -158,9 +158,8 @@ kernel.
 work.  As with AUFS, we’ve seen partitions freeze and kernels lock up despite
 playing cat and mouse with kernel versions to stay up to date. When nearing disk
 space capacity, BTRFS acts unpredictably, and the same goes if you have 1000s of
-these
-* **CoW layers (subvolumes in BTRFS-terminology)**. BTRFS uses a lot of memory.
-Overlay. This was merged into the Linux kernel in 3.18, and has been [quite
+these CoW layers (subvolumes in BTRFS-terminology). BTRFS uses a lot of memory.
+* **OverlayFS**. This was merged into the Linux kernel in 3.18, and has been [quite
 stable and fast for us][redhat-fs]. It uses [a lot less memory][memory-overlay]
 as it manages to share the page cache between inodes. Unfortunately it requires
 you run a recent kernel not adopted by most distributions, which often means
