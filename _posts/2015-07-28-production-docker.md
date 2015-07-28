@@ -261,14 +261,14 @@ distribution.
 ## Conclusion
 
 Many other topics haven’t been discussed on purpose, such as storage,
-networking, multi-tenancy and service discovery. What Docker needs today is more
-people going to production with containers alone at scale.  Unfortunately, many
-companies are trying to overcompensate from their current stack by [shooting for
-the stars of a PaaS][dockercon-eu-talk-unicorn-slide] from the get go. This
-approach only works if you’re small or planning on doing greenfield deployments
-with Docker—which rarely run into all the obscurities of production. To see more
-widespread production usage, we need to tip the pro/con scale in favour of
-Docker by resolving some of the issues highlighted above.
+networking, multi-tenancy, orchestration and service discovery. What Docker
+needs today is more people going to production with containers alone at scale.
+Unfortunately, many companies are trying to overcompensate from their current
+stack by [shooting for the stars of a PaaS][dockercon-eu-talk-unicorn-slide]
+from the get go. This approach only works if you’re small or planning on doing
+greenfield deployments with Docker—which rarely run into all the obscurities of
+production. To see more widespread production usage, we need to tip the pro/con
+scale in favour of Docker by resolving some of the issues highlighted above.
 
 Docker is putting itself in an exciting place as the interface to PaaS be it
 discovery, networking or service discovery with applications not having to care
