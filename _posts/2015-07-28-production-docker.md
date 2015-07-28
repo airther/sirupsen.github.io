@@ -3,8 +3,6 @@ layout: post
 title: Why Docker is Not Yet Succeeding Widely in Production
 ---
 
-# Why Docker is Not Yet Succeeding Widely in Production
-
 Docker's momentum has been increasing by the week, and from that it’s clearly
 touching on real problems. However, for many production users today, the pros do
 not outweigh the cons. Docker has done fantastically well at making containers
