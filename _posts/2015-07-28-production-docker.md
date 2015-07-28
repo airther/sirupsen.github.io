@@ -177,12 +177,12 @@ is definitely where the space is heading. It seems we just have to wait.
 
 Just as Docker relies on the frontier of file systems, it also leverages a large
 number of recent additions to the kernel, namely namespaces and (not-so-recent,
-but less used) cgroups. These features (especially namespaces) are not yet
-battle-hardened from wide adoption in the industry. We run into obscure bugs
-with these [once in a while][cgroup-bug]. We run with the network namespace
-disabled in production because we’ve experienced a fair amount of soft-lockups
-that we’ve traced to the implementation, but haven’t had the resources to fix
-upstream. The memory cgroup uses [a fair amount of
+but also not too commonly used) cgroups. These features (especially namespaces)
+are not yet battle-hardened from wide adoption in the industry. We run into
+obscure bugs with these [once in a while][cgroup-bug]. We run with the network
+namespace disabled in production because we’ve experienced a fair amount of
+soft-lockups that we’ve traced to the implementation, but haven’t had the
+resources to fix upstream. The memory cgroup uses [a fair amount of
 memory][redhat-cgroup-memory], and I’ve heard unreliable reports from the wild.
 As containers see more and more use, it’s likely the larger companies that will
 pioneer this stability work.
