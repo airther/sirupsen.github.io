@@ -32,10 +32,12 @@ have an image ready in less than a minute. Dockerfiles make this almost
 impossible for large applications. While easy to use, they sit at an abstraction
 layer too high to enable complex use-cases:
 
-Out-of-band caching for particularly heavy-weight and application-specific
-dependencies Accessing secrets at build time without committing them to the
-image Full control over layers in the final image Parallelization of building
-layers
+- Out-of-band caching for particularly heavy-weight and application-specific
+dependencies
+- Accessing secrets at build time without committing them to the
+image
+- Full control over layers in the final image
+- Parallelization of building layers
 
 Most people do not need these features, but for large applications many of them
 are prerequisites for fast builds. Configuration management software like Chef
