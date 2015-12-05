@@ -66,10 +66,12 @@ To eat seasonally, you need to keep an open-mind to experiment with new
 vegetables. You're not going to eat asparagus in October, or fresh tomatoes in
 February. You may not have much experience with collards, rutabaga and
 sunchoke—but they can all be delicious. When asparagus came in season in Ontario
-this late spring, I ate them every day for three weeks experimenting with
+this late spring, I ate them every day (only for dinner, I had other vegetables
+for lunch) for three weeks experimenting with
 different preparations (sautéed asparagus, cremini mushrooms, garlic, lemon
-juice, shallots, olive oil and shrimp ended up being the winner. I also forgot
-what pee normally smells like.). It's an
+juice, shallots, olive oil and shrimp ended up being the winner). In addition, I
+forgot what [normal pee smells
+like](http://www.webmd.com/food-recipes/why-pee-smells-funny-eat-asparagus). It's an
 extreme, but it's a great way to commit to different preparations of the same
 vegetable. Your grandparents and national cuisine are great sources of
 inspiration for recipes with the more adventurous vegetables, because long ago
