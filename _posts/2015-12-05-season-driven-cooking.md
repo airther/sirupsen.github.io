@@ -88,6 +88,11 @@ Watson](https://www.ibmchefwatson.com/). Pairing a couple of flavours and
 browsing the Internet for recipes using those for inspiration is another great
 trick.
 
+For meats seasons don't matter quite as much, but still plays a factor.
+Especially when it comes to game meat, which is incredibly and I envy you if you
+have access to it. I order my meats off of local farms just like vegetables and
+fruits.
+
 You also need to track the seasons. Do you have any idea what's good in June?
 October? March? You can build a flashcard deck of vegetables and their seasons,
 or simply use a site like [Eat the Seasons](http://www.eattheseasons.com/).
