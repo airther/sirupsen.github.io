@@ -141,8 +141,8 @@ you’re curious).
 
 Docker relies on [CoW][cow] (Copy on Write) from the filesystem ([great LWN
 series on union filesystems][unionfs-lwn], which enable CoW). This is to make
-sure that if you have 100 containers running from an image, you don’t need 100 *
-<size of image> disk space. Instead, each container creates a CoW layer on top
+sure that if you have 100 containers running from an image, you don’t need
+`100x<size of image>` disk space. Instead, each container creates a CoW layer on top
 of the image and only uses disk space when it changes a file from the original
 image. Good container citizens have a minimal impact on the filesystem inside
 the container, as such changes means the container takes on state, which is a
