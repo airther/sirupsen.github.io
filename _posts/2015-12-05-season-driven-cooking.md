@@ -89,7 +89,7 @@ browsing the Internet for recipes using those for inspiration is another great
 trick.
 
 For meats seasons don't matter quite as much, but still plays a factor.
-Especially when it comes to game meat, which is incredibly and I envy you if you
+Especially when it comes to game meat, which is incredible and I envy you if you
 have access to it. I order my meats off of local farms just like vegetables and
 fruits.
 
