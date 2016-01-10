@@ -96,14 +96,23 @@ fruits.
 You also need to track the seasons. Do you have any idea what's good in June?
 October? March? You can build a flashcard deck of vegetables and their seasons,
 or simply use a site like [Eat the Seasons](http://www.eattheseasons.com/).
-Farmer's markets follow the seasons, so they're generally a safe bet. Grocery
-stores often don't, but they tend to have a part of the produce section
-dedicated to vegetables and fruits grown locally (and therefore, are in season).
-I order my vegetables directly from local farms. Getting a big basket of
-assorted vegetables is generally not the way to go, as you'll be overwhelmed
+Farmer's markets follow the seasons, so they're generally a safe bet. They
+usually have an [overview on their website about what's in
+season](http://ottawafarmersmarket.ca/whats-in-season/). Grocery stores often
+don't, but they tend to have a part of the produce section dedicated to
+vegetables and fruits grown locally (and therefore, are in season).  Personally,
+I created [a spreadsheet](https://airtable.com/shrvVrHDN6idKdAZN) to track
+Ontario.  I order my vegetables directly from local farms. Getting a big basket
+of assorted vegetables is generally not the way to go, as you'll be overwhelmed
 with the amount of things you've never cooked before. Instead, find somewhere
 you can customize the basket's contents. Investing in this knowledge will come
 in handy for the rest of your life. This stuff can't be unlearned.
 
-My goal for 2016 is to not go to the grocery store at all, but source everything
-by season and availability from locals.
+I hope you're now convinced that the reason restaurants often outperform your
+kitchen, is because they track season and optimize for locality. Farm to table
+is not about being hipster, it's about producing the best possible taste that
+time of year. If a restaurant has the same menu year-round, they don't track
+seasons. That's a bad sign.
+
+My goal for 2016 is to not go to the grocery store for produce, but source
+everything by season and availability from locals.
