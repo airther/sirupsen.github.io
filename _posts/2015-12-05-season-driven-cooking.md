@@ -101,12 +101,19 @@ usually have an [overview on their website about what's in
 season](http://ottawafarmersmarket.ca/whats-in-season/). Grocery stores often
 don't, but they tend to have a part of the produce section dedicated to
 vegetables and fruits grown locally (and therefore, are in season).  Personally,
-I created [a spreadsheet](https://airtable.com/shrvVrHDN6idKdAZN) to track
-Ontario.  I order my vegetables directly from local farms. Getting a big basket
-of assorted vegetables is generally not the way to go, as you'll be overwhelmed
+I created a spreadsheet to track availability in Ontario.
+
+<iframe src="https://airtable.com/embed/shrvVrHDN6idKdAZN?viewControls=on"
+frameborder="0" onmousewheel="" width="100%" height="533" style="background:
+#fff; border: 1px solid #ccc;"></iframe>
+
+I order my vegetables directly from local farms. Getting a big basket of
+assorted vegetables is generally not the way to go, as you'll be overwhelmed
 with the amount of things you've never cooked before. Instead, find somewhere
-you can customize the basket's contents. Investing in this knowledge will come
-in handy for the rest of your life. This stuff can't be unlearned.
+you can customize the basket's contents. A farmer's market is another good
+option. Plan beforehand what you'll buy from what's in season. Investing in this
+knowledge will come in handy for the rest of your life. This stuff can't be
+unlearned.
 
 I hope you're now convinced that the reason restaurants often outperform your
 kitchen, is because they track season and optimize for locality. Farm to table
