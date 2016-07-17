@@ -1,2 +1,4 @@
 permalink: '/:title'
 exclude: [vendor]
+future: true
+timezone: America/New_York
