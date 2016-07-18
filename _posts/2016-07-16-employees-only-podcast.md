@@ -31,15 +31,15 @@ growth. I wanted to be able to appreciate the work that they do, which is often
 completely transparent to other parts of the organization if done well. I felt
 the best way to do that was to reach out to people, get a handful of resources
 and come up with a bunch of questions. Inviting people to lunch over a 3-page
-question sheet felt too extreme. However, if it would be shared with the rest of
-the company, suddenly that's not so weird. I didn't want to transcribe it,
-because we already had plenty of text content internally. Second, this is not my
-full-time job, just a one hour a week side-project. Transcribing is incredibly
-time-consuming, as a colleague who'd done something similar in the past pointed
-out. Audio has become a prevalent medium in the past couple of years. Podcasts
-and Audiobooks becoming more and more popular. An internal-only podcast seemed
-like a great addition to all the videos and text we were already producing
-internally.
+question sheet felt too extreme. However, if it would be recorded and shared
+with the rest of the company in some form, suddenly that's not so weird. I
+didn't want to transcribe it, because we already had plenty of text content
+internally. Second, this is not my full-time job, just a one hour a week
+side-project. Transcribing is incredibly time-consuming, as a colleague who'd
+done something similar in the past pointed out. Audio has become a prevalent
+medium in the past couple of years. Podcasts and Audiobooks becoming more and
+more popular. An internal-only podcast seemed like a great addition to all the
+videos and text we were already producing and consuming internally.
 
 To get the initial content, I scheduled calendar events with four people. A week
 before the interview I'd ask them for resources about their role and projects:
@@ -57,10 +57,10 @@ decided that an iPhone would do. I still use this today, with a pass in Audacity
 to reduce ambient noise.
 
 After having the first four interviews in the bank came the next problem:
-hosting the episodes. There are a ton of great software out there to host your
-podcast. However, they're all under the reasonable assumption that your podcast
-will be public. This podcast would only be for the employees of Shopify, and
-would hold confidential information. Additionally, standard podcast software
+hosting the episodes. There is a ton of great software out there to host your
+podcast. However, it's all build with the reasonable assumption that your
+podcast will be public. This podcast would only be for the employees of Shopify,
+and would hold confidential information. Additionally, standard podcast software
 only supports unauthenticated endpoints. The last problem is that when an
 employee leaves the company, they cannot continue to receive new, confidential
 information on this stream. I built a quick extension to our Intranet that would
@@ -69,9 +69,9 @@ someone leaves the company the feed will automatically vanish.
 
 When it launched, it was a big hit! The first episode was downloaded by ~30% of
 the company. Since then, every two weeks I have released a new episode. The
-number of listeners has climbed as its shared within the company and more people
-join Shopify. I have received a lot of great feedback on the podcast. Today, 11
-episodes have been released.
+number of listeners has climbed as it's shared within the company and more
+people join the company. I have received a lot of great feedback on the podcast.
+Today, 11 episodes have been released.
 
 1. Shopify Capital
 2. Shopify Plus
