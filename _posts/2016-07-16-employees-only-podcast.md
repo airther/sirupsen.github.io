@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Employees Only Podcast
+permalink: "/podcast"
 ---
 
 In March, I decided to take upon myself the project of creating an internal
