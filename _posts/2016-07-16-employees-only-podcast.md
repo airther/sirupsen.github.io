@@ -41,19 +41,19 @@ like a great addition to all the videos and text we were already producing
 internally.
 
 To get the initial content, I scheduled calendar events with four people. A week
-before the interview I'd ask them for resources about they're role and projects:
+before the interview I'd ask them for resources about their role and projects:
 books, articles, videos, Podcasts, brain-dumps, whatever. This was a fantastic
 forcing-function to learn about areas of an organization I didn't know much
 about. I learnt about business development, and got a completely new
 appreciation for it. Doing an interview with our government relations person
 forced me to learn much more about lobbying in Canada and Canadian politics. A
-day or two before the interview, I'd send my questions to the person being
-interviewed so they could note down key points to the questions. Since I wasn't
-going to do any editing, it was important to me that they would be as eloquent
-and prepared as possible. It would also help me figure out if there was anything
-I missed. Because I didn't want to end up in the rabbit-hole of recording
-equipment I decided that an iPhone would do. I still use this today, with a pass
-in Audacity to reduce ambient noise.
+day or two before the interview, I send my questions to the person being
+interviewed so they can note down key points to the questions. Since I don't do
+any editing, it's important to me people attempt to come in as poised as
+possible. It would also help me figure out if there was anything I missed.
+Because I didn't want to end up in the rabbit-hole of recording equipment I
+decided that an iPhone would do. I still use this today, with a pass in Audacity
+to reduce ambient noise.
 
 After having the first four interviews in the bank came the next problem:
 hosting the episodes. There are a ton of great software out there to host your
@@ -93,12 +93,12 @@ journalism, you don't get an opportunity to evaluate the way you have
 conversations with people and interview them often. It's helped me identify how
 to ask better questions to help people communicate their message as clearly and
 coherently as possible. In the beginning, I was fairly tied to my questions and
-their structure as it was new to me. Now, I'm more confident in running these
-and can jump around more. I still believe writing out the questions and doing
-plenty of research beforehand is valuable. It helps you ask the right questions.
+their structure as it was new to me. Now, I'm more confident in running
+interviews and can jump around more. I still believe writing out the questions
+and doing plenty of research beforehand is valuable. It helps you ask the right
+questions, provide context for listeners and confidently go off-track and back.
 
 I highly recommend this to other companies that have hit the size where this
 makes sense. How many employees that means, I don't know, and I doubt a magical
 number exists. Send some of your interesting employees an email, read something
 about their role, put a recorder in front of them and ask them questions!
-
